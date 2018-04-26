@@ -3,6 +3,7 @@
         <app-header></app-header>
         <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-1">
         <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-2">
+        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-3">
         <transition name="fade">
             <router-view :key="$route.fullPath"></router-view>
         </transition>
@@ -69,6 +70,13 @@ html, body {
 .decor-2 {
     left: -40%;
     top: 300vh;
+}
+
+.decor-3 {
+    right: -40%;
+    top: 530vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .relative-div,

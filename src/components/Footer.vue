@@ -5,9 +5,10 @@
                 <div class="columns">
                     <div class="column is-6 green" style="color: white;">
                         <div class="columns is-centered">
-                            <div class="column is-4">
-                                <!-- <p>Founding Sponsor</p>
-                                <img src="https://parkpeople.ca/listings/custom/uploads/2017/09/TD-logo.png"> -->
+                            <div class="column is-10 collab-footer">
+                                <p>Made possible by a great collaboration:</p>
+                                <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/greenbelt_Logo.png">
+                                <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/parkpeople-logo.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -26,9 +27,9 @@
                                     <li>Charity #: 846449437RR0001</li>
                                 </ul>
                                 <ul class="social-links">
-                                    <li><a href="https://parkpeople.ca/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://twitter.com/Park_People" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.facebook.com/ParkPeopleTO/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://parkpeople.ca/" target="_blank"><i class="fas fa-home"></i></a></li>
+                                    <li><a href="https://twitter.com/Park_People" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/ParkPeopleTO/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 </ul>
     
                             </div>
@@ -46,9 +47,10 @@
                 <div class="columns">
                     <div class="column is-6 green" style="color: white;">
                         <div class="columns is-centered">
-                            <div class="column is-4">
-                                <!-- <p>Founding Sponsor</p>
-                                <img src="https://parkpeople.ca/listings/custom/uploads/2017/09/TD-logo.png"> -->
+                            <div class="column is-10 collab-footer">
+                                <p>Made possible by a great collaboration:</p>
+                                <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/greenbelt_Logo.png">
+                                <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/parkpeople-logo.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -67,9 +69,9 @@
                                     <li>Charity #: 846449437RR0001</li>
                                 </ul>
                                 <ul class="social-links">
-                                    <li><a href="https://parkpeople.ca/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://twitter.com/Park_People" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.facebook.com/ParkPeopleTO/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/parkppl/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/Park_People" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/ParkPeopleTO/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 </ul>
     
                             </div>
@@ -95,6 +97,16 @@
 
     // Import Variables
     @import '../styles/variables.scss';
+
+    .collab-footer {
+        text-align: center;
+        p {
+            margin-bottom: 40px;
+        }
+        img {
+            margin: 0 30px;
+        }
+    }
 
     .button {
         color: $white;
@@ -129,6 +141,7 @@
             &:before {
                 content: '';
                 position: absolute;
+                z-index: 5;
                 left: 0;
                 top: -70px;
                 width: 100%;

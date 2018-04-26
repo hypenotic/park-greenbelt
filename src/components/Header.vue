@@ -2,7 +2,7 @@
     <nav v-if="scrolled == true" id="scrolling" class="navbar green">
         <div class="navbar-brand">
             <div>
-                <a href="https://parkpeople.ca"><img src="https://parkpeople.ca/listings/custom/themes/parkpeople/dist/images/parkpeople-logo-PMS.png" class="grants-logo"></a>
+                <!-- <a href="https://parkpeople.ca"><img src="https://parkpeople.ca/listings/custom/themes/parkpeople/dist/images/parkpeople-logo-PMS.png" class="grants-logo"></a> -->
             </div>
         </div>
 
@@ -17,16 +17,16 @@
 
         <div id="navbarExampleTransparentExample" class="navbar-menu" v-bind:class="{ 'menu-open': showMobileMenu }">
             <div class="navbar-end">
-                <a href="https://parkpeople.ca" class="navbar-item">Home</a>
-                <!-- <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/faq'"><router-link to="/" exact>Grants</router-link></span>
-                <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/'"><router-link to="/faq"  exact>FAQ</router-link></span> -->
+                <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/'"><router-link to="/faq"  exact>FAQ</router-link></span>
+                <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/faq'"><router-link to="/" exact>Back </router-link></span>
+                <a href="https://parkpeople.ca" class="navbar-item">ParkPeople.ca</a>
             </div>
         </div>
     </nav>
     <nav v-else class="navbar green">
         <div class="navbar-brand">
             <div>
-                <a href="https://parkpeople.ca"><img src="https://parkpeople.ca/listings/custom/themes/parkpeople/dist/images/parkpeople-logo-PMS.png" class="grants-logo"></a>
+                <!-- <a href="https://parkpeople.ca"><img src="https://parkpeople.ca/listings/custom/themes/parkpeople/dist/images/parkpeople-logo-PMS.png" class="grants-logo"></a> -->
             </div>
         </div>
 
@@ -41,9 +41,9 @@
 
         <div id="navbarExampleTransparentExample" class="navbar-menu" v-bind:class="{ 'menu-open': showMobileMenu }">
             <div class="navbar-end">
-                <a href="https://parkpeople.ca" class="navbar-item">Home</a>
-                <!-- <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/faq'"><router-link to="/" exact>Grants</router-link></span>
-                <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/'"><router-link to="/faq"  exact>FAQ</router-link></span> -->
+                <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/'"><router-link to="/faq"  exact>FAQ</router-link></span>
+                <span class="navbar-item" v-on:click="showMobileMenu = !showMobileMenu" v-if="this.$route.path == '/faq'"><router-link to="/" exact>Back</router-link></span>
+                <a href="https://parkpeople.ca" class="navbar-item">ParkPeople.ca</a>
             </div>
         </div>
     </nav>
@@ -117,6 +117,10 @@ export default {
 <style lang="scss" scoped>
 
 @import '../styles/variables.scss';
+
+nav {
+    z-index: 500;
+}
 
 .green {
     background-color: $darkGreen;
