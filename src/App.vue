@@ -451,7 +451,7 @@ footer {
     }
     p {
         font-size: 26px;
-        line-height: 34px;
+        line-height: 1.5;
     }
     a {
         text-decoration: none;
