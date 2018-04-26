@@ -1,6 +1,8 @@
 <template>
     <div style="position: relative;">
         <app-header></app-header>
+        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-1">
+        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-2">
         <transition name="fade">
             <router-view :key="$route.fullPath"></router-view>
         </transition>
@@ -45,6 +47,33 @@ html, body {
 		font-size: 18px;
         line-height: 26px;
     }
+}
+
+.green {
+    background-color: $darkGreen;
+}
+
+.decor-image {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.decor-1 {
+    right: -40%;
+    top: 70vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.decor-2 {
+    left: -40%;
+    top: 300vh;
+}
+
+.relative-div,
+div {
+    z-index: 1;
 }
 
 .credits {
@@ -413,6 +442,88 @@ footer {
     font-size: 0.8rem;
     p, ul, li {
         font-size: 0.8rem;
+    }
+}
+
+.topContent {
+    p:first-child {
+		margin-top: 0;
+    }
+    p {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    a {
+        text-decoration: none;
+        border-bottom: none;
+        &:hover {
+            font-weight: normal;
+            border-bottom: 1px solid $blue;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    border-bottom: none;
+    &:hover {
+        color: $blue;
+        font-weight: normal;
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.sidebar {
+	h3 {
+        font-size: 18px;
+        font-family: $family-sanserif;
+        font-weight: bold;
+        margin: 0;
+    }
+    p {
+        margin: 16px 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.download-button {
+    color: $white;
+    background: $orange;
+    border-radius: 50px;
+    padding: 16px 24px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 16px 0 24px;
+    &:hover {
+        color: $white;
+        border: none;
+        font-weight: bold;
+        background: darken($orange, 10)
+    }
+}
+
+.copy-container {
+    padding: 100px 80px;
+    @media #{$xlarge-and-up} {
+        padding: 100px 80px;
+    }
+    ul {
+        padding-left: 40px;
+    }
+    ul, li {
+        list-style-type: disc;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    li {
+        margin-bottom: 16px;
+    }
+    h4 {
+        font-family:"Dosis", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
     }
 }
 </style>

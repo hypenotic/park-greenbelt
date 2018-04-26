@@ -119,7 +119,7 @@ export default {
 @import '../styles/variables.scss';
 
 .green {
-    background-color: #067f1b;
+    background-color: $darkGreen;
 }
 
 nav#scrolling {
@@ -190,7 +190,7 @@ nav#scrolling {
         display: inline-block;
         top: 55px;
         width: 100%;
-        background:  #067f1b;
+        background: $darkGreen;
     }
 }
 

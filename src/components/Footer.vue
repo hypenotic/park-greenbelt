@@ -3,7 +3,7 @@
         <footer v-if="this.$route.path == '/faq'">
             <div>
                 <div class="columns">
-                    <div class="column is-6" style="background-color: green; color: white;">
+                    <div class="column is-6 green" style="color: white;">
                         <div class="columns is-centered">
                             <div class="column is-4">
                                 <!-- <p>Founding Sponsor</p>
@@ -11,7 +11,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-6" style="background-color: green; color: white;">
+                    <div class="column is-6 green" style="color: white;">
                         <div class="columns">
                             <div class="column is-6">
                                 <ul>
@@ -44,7 +44,7 @@
         <footer v-else class="footer-grants">
             <div>
                 <div class="columns">
-                    <div class="column is-6" style="background-color: green; color: white;">
+                    <div class="column is-6 green" style="color: white;">
                         <div class="columns is-centered">
                             <div class="column is-4">
                                 <!-- <p>Founding Sponsor</p>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-6" style="background-color: green; color: white;">
+                    <div class="column is-6 green" style="color: white;">
                         <div class="columns">
                             <div class="column is-6">
                                 <ul>
