@@ -509,7 +509,7 @@ a {
 
 .copy-container {
     padding: 40px 32px;
-    @media #{$xlarge-and-up} {
+    @media #{$large-and-up} {
         padding: 100px 80px;
     }
     ul {
