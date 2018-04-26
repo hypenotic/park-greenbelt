@@ -57,7 +57,7 @@ html, body {
 .decor-image {
     position: absolute;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .decor-1 {
