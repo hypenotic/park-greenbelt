@@ -450,8 +450,12 @@ footer {
 		margin-top: 0;
     }
     p {
-        font-size: 26px;
+        font-size: 18px;
         line-height: 1.5;
+        @media #{$large-and-up} {
+            font-size: 26px;
+            line-height: 1.5;
+        }
     }
     a {
         text-decoration: none;
@@ -504,12 +508,15 @@ a {
 }
 
 .copy-container {
-    padding: 100px 80px;
+    padding: 40px 32px;
     @media #{$xlarge-and-up} {
         padding: 100px 80px;
     }
     ul {
-        padding-left: 40px;
+        padding-left: 32px;
+        @media #{$xlarge-and-up} {
+            padding-left: 40px;
+        }
     }
     ul, li {
         list-style-type: disc;

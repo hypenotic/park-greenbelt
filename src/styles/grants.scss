@@ -5,8 +5,11 @@
 
 .top-logo {
     display: block;
-    max-width: 880px;
+    // max-width: 880px;
     height: auto;
+    @media #{$large-and-up} {
+        max-width: 880px;
+    }
 }
 
 .column-layout {
