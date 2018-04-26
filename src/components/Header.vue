@@ -175,6 +175,7 @@ nav#scrolling {
         &:hover {
             color: $blue;
             background: $white;
+            border-bottom: none;
         }
     }
     span {

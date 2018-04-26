@@ -8,6 +8,7 @@ import { state } from './state'
 
 import { 
     SET_RESOURCES, 
+    SET_PAGE_DATA,
     RECEIVE_GRANT_DATA, 
     TOGGLE_LANGUAGE, 
     ADD_SINGLE_RESOURCE 
@@ -16,6 +17,9 @@ import {
 export const mutations = {
     SET_RESOURCES(state, list) {
         state.resourceList = list
+    },
+    SET_PAGE_DATA(state, data) {
+        state.pageData = data
     },
     TOGGLE_LANGUAGE(state, lang) {
         state.language = lang

@@ -2,8 +2,8 @@
     <div style="position: relative;">
         <app-header></app-header>
         <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-1">
-        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-2">
-        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-3">
+        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-2" v-if="this.$route.path == '/'">
+        <img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_bg_pattern-03.png" alt="" class="decor-image decor-3" v-if="this.$route.path == '/'">
         <transition name="fade">
             <router-view :key="$route.fullPath"></router-view>
         </transition>
@@ -65,11 +65,19 @@ html, body {
     top: 70vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    @media #{$xlarge-and-up} {
+        top: 500px;
+        right: -200px;
+    }
 }
 
 .decor-2 {
     left: -40%;
     top: 300vh;
+    @media #{$xlarge-and-up} {
+        left: -200px;
+        top: 1600px;
+    }
 }
 
 .decor-3 {
@@ -77,6 +85,10 @@ html, body {
     top: 530vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    @media #{$xlarge-and-up} {
+        right: -200px;
+        top: 3200px;
+    }
 }
 
 .relative-div,
