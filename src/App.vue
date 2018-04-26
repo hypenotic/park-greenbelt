@@ -515,10 +515,14 @@ a {
     color: $white;
     background: $orange;
     border-radius: 50px;
-    padding: 16px 24px;
+    padding: 10px 32px;
     font-weight: bold;
     display: inline-block;
     margin: 16px 0 24px;
+    font-family: "Dosis", sans-serif;
+    i {
+        margin-right: 10px;
+    }
     &:hover {
         color: $white;
         border: none;
