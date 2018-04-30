@@ -1,6 +1,9 @@
 .logo-container {
     max-width: 1080px;
-    margin:  0 auto 40px;
+    // margin:  0 auto 40px;
+    @media #{$large-and-up} {
+        margin:  20px auto 60px;
+    }
 }
 
 .top-logo {
@@ -28,7 +31,7 @@
 }
 
 .alternating {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     .single {
         @media #{$large-and-up} {

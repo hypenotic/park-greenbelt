@@ -557,4 +557,18 @@ a {
         font-weight: bold;
     }
 }
+
+.social-share-buttons {
+    i {
+        margin: 0 8px;
+    }
+    span {
+        &:hover {
+            cursor: pointer;
+            i {
+                color: $blue;
+            }
+        }
+    }
+}
 </style>

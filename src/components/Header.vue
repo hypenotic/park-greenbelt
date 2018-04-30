@@ -3,6 +3,33 @@
         <div class="navbar-brand">
             <div>
                 <!-- <a href="https://parkpeople.ca"><img src="https://parkpeople.ca/listings/custom/themes/parkpeople/dist/images/parkpeople-logo-PMS.png" class="grants-logo"></a> -->
+                <div class="social-share-container">
+					<div id="social-share-trigger" v-bind:class="{ 'social-menu-open': showSocialShare }" v-on:click="showSocialShare = !showSocialShare">
+						<i class="fa fa-share-alt" aria-hidden="true"></i> Tell someone!
+					</div>
+					<social-sharing :url="`https://parkpeople.ca/possibilityflowshere`"
+					title="Park People | Greenbelt River Valley Connector Program"
+					description="Over the next three years, through a collaboration between The Greenbelt Foundation and Park People, the Greenbelt River Valley Connector Program will provide grants to support fifteen place-based community projects across the GTHA that will celebrate and enhance these natural valley areas."
+					quote=""
+					hashtags="PossibilityFlowsHere"
+					twitter-user="Park_People"
+					inline-template>
+					<div class="social-share-buttons">
+						<network network="email">
+							<i class="far fa-envelope"></i>
+						</network>
+						<network network="twitter">
+							<i class="fab fa-twitter"></i>
+						</network>
+						<network network="facebook">
+							<i class="fab fa-facebook-f"></i>
+						</network>
+						<network network="linkedin">
+							<i class="fab fa-linkedin-in"></i>
+						</network>
+					</div>
+					</social-sharing>
+				</div>
             </div>
         </div>
 
@@ -27,6 +54,33 @@
         <div class="navbar-brand">
             <div>
                 <!-- <a href="https://parkpeople.ca"><img src="https://parkpeople.ca/listings/custom/themes/parkpeople/dist/images/parkpeople-logo-PMS.png" class="grants-logo"></a> -->
+                <div class="social-share-container">
+					<div id="social-share-trigger" v-bind:class="{ 'social-menu-open': showSocialShare }" v-on:click="showSocialShare = !showSocialShare">
+						<i class="fa fa-share-alt" aria-hidden="true"></i> Tell someone!
+					</div>
+					<social-sharing :url="`https://parkpeople.ca/possibilityflowshere`"
+					title="Park People | Greenbelt River Valley Connector Program"
+					description="Over the next three years, through a collaboration between The Greenbelt Foundation and Park People, the Greenbelt River Valley Connector Program will provide grants to support fifteen place-based community projects across the GTHA that will celebrate and enhance these natural valley areas."
+					quote=""
+					hashtags="PossibilityFlowsHere"
+					twitter-user="Park_People"
+					inline-template>
+					<div class="social-share-buttons">
+						<network network="email">
+							<i class="far fa-envelope"></i>
+						</network>
+						<network network="twitter">
+							<i class="fab fa-twitter"></i>
+						</network>
+						<network network="facebook">
+							<i class="fab fa-facebook-f"></i>
+						</network>
+						<network network="linkedin">
+							<i class="fab fa-linkedin-in"></i>
+						</network>
+					</div>
+					</social-sharing>
+				</div>
             </div>
         </div>
 
@@ -57,7 +111,8 @@ export default {
             id: this.$route.params.id,
             lang: '',
             showMobileMenu: false,
-            scrolled: false
+            scrolled: false,
+            showSocialShare: false
         }
     },
     methods: {
@@ -120,6 +175,13 @@ export default {
 
 nav {
     z-index: 500;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    a {
+        &:hover {
+            font-weight: bold;
+        }
+    }
 }
 
 .green {
@@ -238,5 +300,33 @@ nav#scrolling {
         margin-top: 3px;
         margin-left: 20px; 
 	}
+}
+
+.social-share-container {
+    color: $white;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+}
+
+.social-share-buttons {
+    display: none;
+    i,
+    span {
+        margin: 0 8px;
+    }
+}
+
+#social-share-trigger {
+    padding: 16px 24px;
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+        color: lighten($blue, 10);
+    }
+}
+
+#social-share-trigger.social-menu-open + .social-share-buttons {
+    display: inline-block;
 }
 </style>

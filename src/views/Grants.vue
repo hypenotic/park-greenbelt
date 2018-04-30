@@ -15,12 +15,6 @@
 			</div>
 		</section>
 
-		<!-- <section class="more-info">
-			<div class="container">
-				<div v-html="data.meta_box._page_grant_more_info"></div>
-			</div>
-		</section> -->
-
 		<div class="alternating">
 			<div class="single" v-for="single in data.meta_box._page_alternating" :key="single._page_alt_heading">
 				<div class="image">
