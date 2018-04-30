@@ -571,4 +571,16 @@ a {
         }
     }
 }
+
+.social-home.social-share-container {
+    .social-share-buttons {
+        i {
+            &:hover {
+                cursor: pointer;
+                color: lighten($blue, 20);
+            }
+            
+        }
+    }
+}
 </style>

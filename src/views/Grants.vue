@@ -69,6 +69,30 @@
 		<section class="grants-newsletter">
 			<div class="container">
 				<p>Would someone you know also benefit from reading this? Share it!</p>
+				<div class="social-share-container social-home">
+					<social-sharing :url="`https://parkpeople.ca/possibilityflowshere`"
+					title="Park People | Greenbelt River Valley Connector Program"
+					description="Over the next three years, through a collaboration between The Greenbelt Foundation and Park People, the Greenbelt River Valley Connector Program will provide grants to support fifteen place-based community projects across the GTHA that will celebrate and enhance these natural valley areas."
+					quote=""
+					hashtags="PossibilityFlowsHere"
+					twitter-user="Park_People"
+					inline-template>
+					<div class="social-share-buttons">
+						<network network="email">
+							<i class="far fa-envelope"></i>
+						</network>
+						<network network="twitter">
+							<i class="fab fa-twitter"></i>
+						</network>
+						<network network="facebook">
+							<i class="fab fa-facebook-f"></i>
+						</network>
+						<network network="linkedin">
+							<i class="fab fa-linkedin-in"></i>
+						</network>
+					</div>
+					</social-sharing>
+				</div>
 				<p style="margin-bottom: 1rem;">Want to stay up-to-date on Park People news?</p>
 				<a class="button" href="http://parkpeople.us2.list-manage.com/subscribe?u=ba963c8c64482c0ad756245c3&id=efc9b053b8" target="_blank">Get the Park People newsletter!</a>
 			</div>
@@ -649,5 +673,11 @@ img {
 			font-size: 0.8rem;
 		}
 	}
+}
+
+.social-share-container {
+	padding: 16px 0 8px;
+	font-size: 24px;
+	color: $blue;
 }
 </style>
