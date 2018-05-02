@@ -1,5 +1,5 @@
 <template>
-	<div v-if="loading==false" class="relative-div">
+	<div v-if="data != null" class="relative-div">
 		<section class="section" v-if="data && data.hasOwnProperty('meta_box')">
 
 			<div class="logo-container"><img src="https://parkpeople.ca/listings/custom/uploads/2018/04/GreenbeltGrant_logo_large_colour-04-04.png" alt="Greenbelt River Valley Connector Program" class="top-logo"></div>
@@ -112,7 +112,7 @@ import axios from 'axios';
 export default {
 	data() {
 		return {
-			data: {},
+			// data: {},
 			relatedPosts: [],
 			errors: [],
 			loading: true,
@@ -149,7 +149,9 @@ export default {
 		},
 	},
 	computed: {
-		
+		data() {
+			return this.$store.state.pageData;
+		}
     },
 	methods: {
 
@@ -161,7 +163,7 @@ export default {
 		axios.get('https://parkpeople.ca/listings/wp-json/wp/v2/pages/2117?_embed')
 		.then(response => {
             console.log(response.data)
-			this.data = response.data
+			// this.data = response.data
 			
 			this.loading = false
 			this.$store.commit('SET_PAGE_DATA', response.data);
