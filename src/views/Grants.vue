@@ -31,7 +31,7 @@
 
 		<div class="cta-bottom">
 			<a :href="data.meta_box._page_grant_cta_link" class="download-button"><i class="fas fa-download"></i> Application Form</a>
-			<p>Please direct all questions about the program to: <a href="mailto:info@parkpeople.ca">info@parkpeople.ca</a></p>
+			<p>Please direct all questions about the program to: <a href="mailto:grants@parkpeople.ca">grants@parkpeople.ca</a></p>
 		</div>
 
 		<div class="squiggle">
