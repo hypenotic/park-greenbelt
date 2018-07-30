@@ -15,6 +15,23 @@
 			</div>
 		</section>
 
+		<section class="winners">
+			<h3>The following projects have received Greenbelt River Valley Connector Program grants:</h3>
+			<div class="winners-container">
+				<div class="single-winner" v-for="single in data.meta_box._page_winners" :key="single._page_winner_heading">
+				<div class="image">
+					<img :src="single._page_winner_image" alt="">
+				</div>
+				<div class="copy">
+					<div class="winner-copy-container">
+						<h4 v-html="single._page_winner_heading"></h4>
+						<div v-html="single._page_winner_copy"></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
 		<div class="alternating">
 			<div class="single" v-for="single in data.meta_box._page_alternating" :key="single._page_alt_heading">
 				<div class="image">
@@ -29,10 +46,10 @@
 			</div>
 		</div>
 
-		<div class="cta-bottom">
+		<!-- <div class="cta-bottom">
 			<a :href="data.meta_box._page_grant_cta_link" class="download-button"><i class="fas fa-download"></i> Application Form</a>
 			<p>Please direct all questions about the program to: <a href="mailto:grants@parkpeople.ca">grants@parkpeople.ca</a></p>
-		</div>
+		</div> -->
 
 		<div class="squiggle">
 			<svg viewBox="0 0 1024 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -681,5 +698,54 @@ img {
 	padding: 16px 0 8px;
 	font-size: 24px;
 	color: $blue;
+}
+
+.winners {
+	padding: 3rem;
+	.winners-container {
+		max-width: 1100px;
+		margin: 50px auto;
+	}
+	h3 {
+		max-width: 950%;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bold;
+		color: $darkGreen;
+		font-size: 30px;
+		@media #{$large-and-up} {
+		font-size: 35px;
+		max-width: 80%;
+		}
+	}
+	h4 {
+		font-size: 25px;
+		font-weighT: bold;
+	}
+	.single-winner {
+		margin-bottom: 40px;
+		img {
+			margin-bottom: 20px;
+		}
+		@media #{$large-and-up} {
+			margin-bottom: 80px;
+			display: flex;
+			.image {
+				width: 30%;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.copy {
+				width: 65%; 
+			}
+		}	
+	}
+	.winner-copy-container {
+		@media #{$large-and-up} {
+		padding: 0 3rem;
+		}
+	}
 }
 </style>
