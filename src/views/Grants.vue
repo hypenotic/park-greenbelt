@@ -94,7 +94,7 @@
 					</social-sharing>
 				</div>
 				<p style="margin-bottom: 1rem;">Want to stay up-to-date on Park People news?</p>
-				<a class="button" href="http://eepurl.com/dx3BWX" target="_blank">Get the Park People newsletter!</a>
+				<a class="button" href="https://parkpeople.ca/listings/subscribe/" target="_blank">Get the Park People newsletter!</a>
 			</div>
 		</section>
 
