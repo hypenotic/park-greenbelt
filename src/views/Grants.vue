@@ -15,23 +15,6 @@
 			</div>
 		</section>
 
-		<section class="winners">
-			<h3>The following projects have received Greenbelt River Valley Connector Program grants:</h3>
-			<div class="winners-container">
-				<div class="single-winner" v-for="single in data.meta_box._page_winners" :key="single._page_winner_heading">
-				<div class="image">
-					<img :src="single._page_winner_image" alt="">
-				</div>
-				<div class="copy">
-					<div class="winner-copy-container">
-						<h4 v-html="single._page_winner_heading"></h4>
-						<div v-html="single._page_winner_copy"></div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-
 		<div class="alternating">
 			<div class="single" v-for="single in data.meta_box._page_alternating" :key="single._page_alt_heading">
 				<div class="image">
